@@ -20,7 +20,6 @@ HTTP 127.0.0.1 8443 10.0.4.15 443
 ```
 
 **Keywords for Google:** 
-
 - Ubuntu Boot Key Sequence 2019
 - Ubuntu Server Boot Key Sequence
 - Ubuntu Server Boot Key Sequence 2019
