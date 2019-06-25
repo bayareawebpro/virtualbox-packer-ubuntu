@@ -1,6 +1,7 @@
 # Packer Files for Ubuntu Server 18 LTS & VirtualBox
 Automates the Installation of a VirtualBox Machine with Packer CLI.
 
+**Note:** Figuring out the boot key sequence was a pain the ass, so enjoy.
 
 ## Install Packer
 https://www.packer.io/
