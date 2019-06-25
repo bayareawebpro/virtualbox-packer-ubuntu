@@ -1,0 +1,26 @@
+{
+    "builders": [
+        {
+            "type": "virtualbox-ovf",
+            "source_path": "output-virtualbox-iso/packer-ubuntu-18.04-amd64.ovf",
+            "ssh_username": "builder",
+            "ssh_password": "builder",
+            "ssh_wait_timeout": "10000s",
+            "ssh_port": 22,
+            "shutdown_command": "echo 'builder' | sudo -S shutdown -P now",
+            "boot_wait": "20s",
+            "boot_command": [
+                "builder<enter><wait>",
+                "builder<enter><wait5s>"
+            ]
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "execute_command": "echo 'builder' | sudo -S bash {{.Path}}",
+            "script": "server.sh"
+        }
+    ],
+    "post-processors": []
+}
